@@ -1,10 +1,12 @@
-body {
-  font-family: Arial, sans-serif;
+header img {
+  width: 500px;
+  height: 500px;
+  display: block; 
+  margin: 0 auto; 
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 10px;
+h1 {
+  text-shadow: 3px 3px 5px hsl(0, 100%, 61%), -3px -3px 5px hsl(197, 100%, 61%);
   text-align: center;
 }
 
@@ -20,14 +22,30 @@ section {
   margin: 20px 0;
 }
 
-
-
-.bilder{
-    border: 2px solid red;
-    border-radius: 8px;
-    width: 100px;
-    position: top right;
-  
+.product {
+  left: -100px;
+  top: -100px;
+  width: 1920px;
+  height: 1080px;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  text-align: center;
+  overflow: hidden;
 }
 
+.product .description {
+  padding: 10px;
+  text-align: center;
+}
 
+.product:hover {
+  border: 10px solid hsl(0, 0%, 20%);
+}
+
+.bilder {
+  right: -4700px;
+  top: -3000px;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
