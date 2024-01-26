@@ -173,3 +173,16 @@ a:visited{
 .inline{
   display: flex;
 }
+
+#h1{
+    font-size: larger;
+  
+}
+
+.big-text {
+  font-size: larger; 
+}
+
+.paras {
+  font-size: 1.2em;
+}
