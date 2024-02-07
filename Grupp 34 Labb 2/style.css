@@ -49,7 +49,7 @@ h1 {
 Beskrivning: Stilar för nav-elementet som sätter en flexbox-layout, bakgrundsfärg, textfärg och padding.
 */
 
-nav {
+#menu {
   display: flex;
   justify-content: space-around;
   background-color: #333;
@@ -57,14 +57,11 @@ nav {
   padding: 10px;
 }
 
-
-
 .dropbtn {
   background-color: #4CAF50;
   color: white;
   padding: 10px;
   font-size: 16px;
- 
 }
 
 .dropdown {
@@ -88,7 +85,9 @@ nav {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: black}
+.dropdown-content a:hover {
+  background-color: black;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -353,3 +352,10 @@ aside{
   margin-left: 100px;
   margin-top: 50px;
 }
+
+
+
+
+
+
+
