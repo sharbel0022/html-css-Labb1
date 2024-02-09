@@ -1,0 +1,369 @@
+/* 
+Beskrivning: Stilar för header-elementet som innehåller en bakgrundsfärg, flexbox-layout och centrering av innehållet.
+*/
+header {
+  background-color: rgb(118, 118, 213);
+  display: flex;
+  align-items: center;
+}
+
+/* 
+Beskrivning: Stilar för body-elementet som sätter en marginal på 0.
+*/
+body{
+  margin: 0px;
+}
+
+/* 
+Beskrivning: Stilar för main-elementet som sätter en vänstermarginal på 10px.
+*/
+main{
+  margin-left: 10px;
+}
+
+/* 
+Beskrivning: Stilar för img-elementet inuti header-elementet som sätter en bredd och höjd på 200px.
+*/
+header img {
+  width: 200px;
+  height: 200px;
+}
+
+/* 
+Beskrivning: Stilar för .header-content-klassen som sätter flex-egenskapen till 1.
+*/
+.header-content {
+  flex: 1;
+}
+
+/* 
+Beskrivning: Stilar för h1-elementet som sätter en textskugga och vänsterjustering.
+*/
+h1 {
+  text-shadow: 3px 3px 5px hsl(0, 100%, 61%), -3px -3px 5px hsl(197, 100%, 61%);
+  text-align: left;
+  margin: 0;
+}
+
+/* 
+Beskrivning: Stilar för nav-elementet som sätter en flexbox-layout, bakgrundsfärg, textfärg och padding.
+*/
+#menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+/* 
+Beskrivning: Stilar för section-elementet som sätter en marginal på 20px topp och botten.
+*/
+section {
+  margin: 20px 0;
+}
+
+/* 
+Beskrivning: Stilar för .product-klassen som sätter en bredd, höjd, flexbox-layout, kantlinje, textjustering och overflow.
+*/
+.product {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 60%);
+  margin: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 
+Beskrivning: Stilar för img-elementet inuti .product-klassen som sätter en bredd, höjd och högermarginal.
+*/
+.product img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px; 
+}
+
+/* 
+Beskrivning: Stilar för .product-content-klassen som sätter flex-egenskapen till 1.
+*/
+.product-content {
+  flex: 1;
+}
+
+/* 
+Beskrivning: Stilar för h2-elementet och .description-klassen inuti .product-klassen som sätter högerjustering och marginal till 0.
+*/
+.product h2,
+.product .description {
+  text-align: right;
+  margin: 0;
+}
+
+/* 
+Beskrivning: Stilar för .product:hover som sätter en kantlinje vid hover-tillståndet.
+*/
+.product:hover {
+  border: 10px solid hsl(0, 0%, 20%);
+}
+
+/* 
+Beskrivning: Stilar för .bilder .image-container-klassen som sätter en marginal nedåt.
+*/
+.bilder .image-container {
+  margin-bottom: 20px;
+}
+
+/* 
+Beskrivning: Stilar för img-elementet inuti .bilder-klassen som sätter en position, bredd och höjd.
+*/
+.bilder img {
+  right: -900px;
+  top: -900px;
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+/* 
+Beskrivning: Stilar för .kontakt .kontakt-bilder-image-klassen som sätter en bredd och höjd.
+*/
+.kontakt img.kontakt-bilder-image {
+  width: 400px;
+  height: 300px;
+}
+
+.h2-kontakt {
+  margin-left: 115px;
+  position: relative;
+  top: -50px; 
+  left: -100px; 
+}
+
+/* 
+Beskrivning: Stilar för #objekt-main som sätter en bredd.
+*/
+#objekt-main{
+  width: 600px;
+}
+
+/* 
+Beskrivning: Stilar för a:visited som sätter en färg.
+*/
+a:visited{
+  color: inherit;
+}
+
+/* 
+Beskrivning: Stilar för .tables-klassen som sätter en över- och underkantlinje samt en border-radius.
+*/
+.tables {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+}
+
+/* 
+Beskrivning: Stilar för .prod-desc-klassen som sätter olika marginaler och paddingar.
+*/
+.prod-desc{
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-right: 0px;
+}
+
+/* 
+Beskrivning: Stilar för .prod-info-klassen som sätter en vänstermarginal.
+*/
+.prod-info{
+  margin-left: 10px;
+}
+
+/* 
+Beskrivning: Stilar för .h2-prod-klassen som sätter olika marginaler och paddingar.
+*/
+.h2-prod{
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+/* 
+Beskrivning: Stilar för .table-text a som sätter en färg.
+*/
+.table-text a{
+  color: white;
+}
+
+/* 
+Beskrivning: Stilar för .table-header-klassen som sätter en padding.
+*/
+.table-header{
+  padding: 5px;
+}
+
+/* 
+Beskrivning: Stilar för .subtitle-klassen som sätter en toppmarginal till 0.
+*/
+.subtitle{
+  margin-top: 0px;
+}
+
+/* 
+Beskrivning: Stilar för #p1 som sätter en bredd.
+*/
+#p1{
+  width: 350px;
+}
+
+/* 
+Beskrivning: Stilar för #p2 som sätter en bredd, radhöjd, vänstermarginal.
+*/
+#p2{
+  width: 600px;
+  line-height: 1;
+  margin-left: 5px;
+}
+
+/* 
+Beskrivning: Stilar för .imgs-klassen som sätter en box-shadow.
+*/
+.imgs{
+  box-shadow: 3px 3px 10px;
+}
+
+/* 
+Beskrivning: Stilar för .side-lists-klassen som sätter en kantlinje.
+*/
+.side-lists{
+  border: 2px solid black;
+}
+
+/* 
+Beskrivning: Stilar för #ul1 som sätter olika paddingar.
+*/
+#ul1{ 
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;    
+}
+
+/* 
+Beskrivning: Stilar för #ul2 som sätter olika paddingar och marginaler.
+*/
+#ul2{
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+/* 
+Beskrivning: Stilar för .align-right-klassen som sätter en vänstermarginal.
+*/
+.align-right{
+  padding-left: 235px;
+}
+
+/* 
+Beskrivning: Stilar för .section-border-klassen som sätter en kantlinje, bredd och olika paddingar.
+*/
+.section-border{
+  border: 2px solid black;
+  width: 593px;
+  margin-right: 450px;
+  padding-left: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 0px;
+}
+
+/* 
+Beskrivning: Stilar för .inline-klassen som sätter en flexbox-layout.
+*/
+.inline{
+  display: flex;
+}
+
+/* 
+Beskrivning: Stilar för #h1 som sätter en större fontstorlek.
+*/
+#h1{
+    font-size: larger;
+}
+
+/* 
+Beskrivning: Stilar för .big-text-klassen som sätter en större fontstorlek.
+*/
+.big-text {
+  font-size: larger; 
+}
+
+/* 
+Beskrivning: Stilar för .paras-klassen som sätter en fontstorlek på 1.2em.
+*/
+.paras {
+  font-size: 1.2em;
+}
+
+/* 
+Beskrivning: Stilar för aside-elementet som sätter en vänstermarginal och toppmarginal.
+*/
+aside{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+form {
+  border: 2px solid black;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}

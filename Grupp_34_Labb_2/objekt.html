@@ -1,0 +1,98 @@
+<!-- 
+    Denna del av koden representerar en HTML-sida som visar information om en specifik produkt.
+    Den innehåller en header med en logotyp och en navigationsmeny.
+    Huvudinnehållet består av en bild, produktbeskrivning och produktinformation.
+    Det finns också en karta som visar var produkten finns i lager.
+    Sidan har också en sidofält med länkar till kundserviceinformation.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produkter</title>
+</head>
+<body>
+    <header>
+        <!-- Logotyp och rubrik för webbplatsen -->
+        <img src="Assets/Images/image.png" alt="Vår bild" >
+        <div class="header-content">
+            <h1>NetFurnish</h1>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Objektsida</button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="objekt.html">Objektsida</a>
+              <a href="kontakt.html">Kontakt</a>
+            </div>
+          </div>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+    <div class="inline">
+        <main id="objekt-main">       
+            <h3 id="h1"><b>HAVET 2-sitssoffa<br>(Mio)</b></h3>
+
+            <img class="imgs" id="img2" src="assets/images/couch.png" alt="Image of HAVET 2-sitssoffa from Mio" width="600" height="400">
+
+            <div class="section-border">
+               
+                <div class="inline">
+                    <div>           
+                        <h2 class="h2-prod">HAVET<br><small>2-sitssoffa från Mio</small></h2>
+                        <p class="paras" id="p1">
+                            Tror du på kärlek vid första ögonkastet? Stilren design, snabb montering och enkel skötsel med avtagbar och 
+                            tvättbar klädsel gör det enkelt att älska soffan HAVET. Välkomnande för alla nära och kära!
+                        </p>
+                    </div>
+                    
+                    <div class="prod-desc">
+                        <h2 class="h2-prod prod-info">3 795:-</h2>
+                        <h3 class="prod-info">Produktinformation</h3>
+                        <ul class="side-lists" id="ul2">
+                            <li>Varumärke: <a href="https://www.mio.se/">Mio</a></li>
+                            <li>Lager: <a href="#maps_id">Mio Karlstad</a></li>
+                            <li>10 års garanti</li>
+                            <li>Mjuk</li>
+                            <li>Tvättbar klädsel/överdrag</li>
+                            <li>Bredd: 165cm</li>
+                            <li>Djup: 80cm</li>
+                        </ul>
+                    </div>  
+                </div>                
+            </div>            
+            
+            <p class="paras big-text" id="p2">            
+                Tidlös design med arbetade detaljer som kantband runt armstöden och träben.<br><br>
+                Benen lämnar utrymme under soffan för att skapa ett luftigt utseende och underlätta för dig när du städar.<br><br>
+                Sittkuddarnas kärna av pocketresårer ger en jämn komfort över hela sittytan och ger din kropp bra stöd.<br><br>
+                Pocketresårer är en slitstark lösning som gör att soffan behåller både sin form och komfort under många år.<br><br>
+                Kombinationen av sitthöjd, sittdjup och ryggkuddar ger dig bra stöd och gör att du får en mer upprätt sittposition i soffan.<br><br>
+                Den här klädseln är gjord av det spinnfärgade tyget Vissle i polyester. Det är ett slitstarkt tyg med en slät väv och fin tvåtonseffekt.<br><br>
+                Klädseln är lätt att hålla ren eftersom den är avtagbar och kan tvättas i maskin.<br><br>
+                10 års garanti.
+            </p>
+            
+            <p id="maps_id">
+                <!-- Karta som visar var produkten finns i lager -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.1299550665094!2d13.46491617711577!3d59.380858574639305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3b44b3b22cd%3A0x8281b61b27b291f0!2sMio%20Karlstad!5e0!3m2!1sen!2sse!4v1705798130535!5m2!1sen!2sse" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </main>
+        <aside>
+            <h3>Kundservice</h3>
+            <ul class="side-lists" id="ul1">
+                <li><a href="kontakt.html"><b>Kontakta oss</b></a></li>
+                <li><a href="kontakt.html"><b>Vanliga frågor</b></a></li>
+                <li><a href=""><b>Retur & reklamation</b></a></li>
+                <li><a href=""><b>Köp & leveransvillkor</b></a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
