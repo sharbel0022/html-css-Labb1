@@ -48,7 +48,8 @@ h1 {
 /* 
 Beskrivning: Stilar för nav-elementet som sätter en flexbox-layout, bakgrundsfärg, textfärg och padding.
 */
-nav {
+
+#menu {
   display: flex;
   justify-content: space-around;
   background-color: #333;
@@ -56,12 +57,52 @@ nav {
   padding: 10px;
 }
 
-/* 
-Beskrivning: Stilar för section-elementet som sätter en marginal på 20px topp och botten.
-*/
-section {
-  margin: 20px 0;
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
 
 /* 
 Beskrivning: Stilar för .product-klassen som sätter en bredd, höjd, flexbox-layout, kantlinje, textjustering och overflow.
@@ -121,7 +162,7 @@ Beskrivning: Stilar för img-elementet inuti .bilder-klassen som sätter en posi
 */
 .bilder img {
   right: -900px;
-  top: -1000px;
+  top: -900px;
   width: 600px;
   height: 400px;
   position: relative;
@@ -131,15 +172,8 @@ Beskrivning: Stilar för img-elementet inuti .bilder-klassen som sätter en posi
 Beskrivning: Stilar för .kontakt .kontakt-bilder-image-klassen som sätter en bredd och höjd.
 */
 .kontakt img.kontakt-bilder-image {
-  width: 400px;
-  height: 300px;
-}
-
-.h2-kontakt {
-  margin-left: 115px;
-  position: relative;
-  top: -50px; 
-  left: -100px; 
+  width: 1000px; 
+  height: 600px;
 }
 
 /* 
@@ -319,10 +353,9 @@ aside{
   margin-top: 50px;
 }
 
-form {
-  border: 2px solid black;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-}
+
+
+
+
+
+

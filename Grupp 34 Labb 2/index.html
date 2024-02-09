@@ -24,16 +24,27 @@
       </div>
     </header>
 
-    <!-- 
-    Denna del av koden representerar navigationsmenyn för webbsidan.
-    Den innehåller länkar till tre olika sidor: "Home", "Objektsida" och "Kontakt".
-    Navigationsmenyn är placerad inuti en <nav> tagg.
-    -->
-    <nav>
-      <a href="index.html">Home</a>
+
+
+    <nav id="menu">
+      <!-- Navigationsmeny med länkar till olika sidor -->
+      <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="objekt.html">Objektsida</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </div>
       <a href="objekt.html">Objektsida</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
+    
+
+
+
+    
+    
 
     <!-- 
     Denna del av koden representerar en sektion för navigering och innehåller en inbäddad Google Maps-karta. 
@@ -41,18 +52,7 @@
     specifik URL. Andra attribut som används är style för att ange en ramstil, allowfullscreen för att tillåta fullskärmsläge 
     och loading för att ange laddningsbeteende. 
     -->
-    <section>
-      <h2>Navigation Section</h2>
-      <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.5992108693652!2d13.580007712697721!3d59.40639897454602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads%20universitet!5e0!3m2!1ssv!2sse!4v1705656758192!5m2!1ssv!2sse"
-          width="600"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
+  
   
 
   <section>
@@ -135,21 +135,13 @@
       Varje bild är innesluten i en "image-container" div och 
       länkar till en specifik webbadress. Bilderna visas med 
       hjälp av "img" taggen och har en alternativ text för tillgänglighet. -->
-    <div class="bilder">
-      <div class="image-container">
-        <a href="https://www.ikea.com/se/sv/">
-          <img src="Assets/Images/reside-3104077_1280.jpg" alt="säng" >
-        </a>
-      </div>
-
-      <div class="image-container">
-        <a href="https://www.mio.se/">
-          <img src="Assets/Images/room-4768551_1280.jpg" alt="rum" >
-        </a>
-      </div>
-    </div>
-
-    
-
-  </body>
-</html>
+      <div class="bilder">
+        <div class="image-container">
+          <a href="https://www.ikea.com/se/sv/">
+            <img src="Assets/Images/reside-3104077_1280.jpg" alt="säng" >
+          </a>
+        </div>
+        </div>
+      </body>
+      </html>
+      
