@@ -1,3 +1,14 @@
+<!-- 
+Denna HTML-kod representerar en kontaktsida för en webbplats. Den innehåller följande delar:
+
+- En header med en logotyp och en rubrik.
+- En navigationsmeny med länkar till startsidan, objektsidan och kontaktsidan.
+- En sektion med kontaktinformation, inklusive telefonnummer och e-postadress.
+- En sektion med vanliga frågor och svar.
+- En sektion med allmän information, inklusive länkar till samarbetande varumärken, garantier och reklamationer, 
+öppet köp och retur, samt köp- och leveransvillkor.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +23,7 @@
         <div class="header-content">
           <h1>NetFurnish</h1>
         </div>
-      </header>
+    </header>
   
       <nav>
         <a href="index.html">Home</a>
@@ -20,69 +31,121 @@
         <a href="kontakt.html">Kontakt</a>
       </nav>
 
-      <div>
-        <h2><strong>Kontakt</strong></h2>
-        
-        <p>
-            <b>Telefon:</b> <a href="tel:010-254-42-56"><strong>010-254 42 56</strong></a>
-        </p>
-        
-        <p>
-            <strong>Telefontider:</strong>
-            <br>
-            <i>Mån-Fre:</i> 08:00 - 18:00<br>
-            <i>Lördag:</i> 08:00 - 17:00<br>
-            <i>Söndag:</i> Stängt
-        </p>
-        
-        <p>
-            <b>E-post:</b> <a href="mailto:kalleanka@gmail.com"><strong>kundservice@NetFurnish.com</strong></a>
-        </p>
-    </div>
-    
-    
-        
+    <div class="inline">
+        <main>
+            <div>
+                <h2><strong>Kontakt</strong></h2>
 
-    
-        <div class="kontakt">
-       
-            <ul>
-                <li>
-                    <img class="kontakt-bilder-image" src="Assets/Images/question-mark-1019820_1280.jpg" alt="Frågor">
-                    <h2>Vanliga frågor och svar</h2>
+                <p>
+                    <b>Telefon:</b> <a href="tel:010-254-42-56"><strong>010-254 42 56</strong></a>
+                </p>
+
+                <p>
+                    <strong>Telefontider:</strong>
+                    <br>
+                    <i>Mån-Fre:</i> 08:00 - 18:00<br>
+                    <i>Lördag:</i> 08:00 - 17:00<br>
+                    <i>Söndag:</i> Stängt
+                </p>
+
+                <p>
+                    <b>E-post:</b> <a href="mailto:kalleanka@gmail.com"><strong>kundservice@NetFurnish.com</strong></a>
+                </p>
+            </div>   
+
+            <div class="kontakt">
+            
+                <img class="kontakt-bilder-image" src="Assets/Images/question-mark-1019820_1280.jpg" alt="Frågor">
+
+                <h2>Vanliga frågor och svar</h2>
+                
+                <ul>
                     <li><a href="">Hur sköter jag min produkt?</a></li>
                     <li><a href="">Var hittar jag monteringsanvisningar?</a></li>
                     <li><a href="">Hur ser NetFurnish hållbarhetsarbete ut?</a></li>
-                
-            </ul>
-            
-            
-            
 
-            <table>
-                <tr>
-                    <td>
-                        <img class="kontakt-bilder-image" src="Assets/Images/label-1289350_1280.png" alt="Allmänt">
-                        <h2>Allmänt</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="">Samarbetande varumärken</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">Garanti & reklamation</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">Öppet köp & retur</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">Köp & leveransvillkor</a></td>
-                </tr>
-            </table>
-            
-            
+                </ul>    
 
-      
+                <table>
+                    <tr>
+                        <td>
+                            <img class="kontakt-bilder-image" src="Assets/Images/label-1289350_1280.png" alt="Allmänt">
+                            <h2>Allmänt</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Samarbetande varumärken</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Garanti & reklamation</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Öppet köp & retur</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Köp & leveransvillkor</a></td>
+                    </tr>
+                </table>
+            </div>        
+        </main>
+
+        <aside>
+            <div class="h2-kontakt">
+                <h2>Anmäl Bekymmer</h2>
+
+                <form action="Kontakt.txt" method="GET">
+
+                    <label for="förnamn">Förnamn*</label>
+                    <input type="text" id="förnamn" required><br>
+
+                    <label for="efternamn">Efternamn*</label>
+                    <input type="text" id="efternamn" required><br>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required><br>
+
+                    <label for="telefonnummer">Telefonnummer*</label>
+                    <input type="tel" id="telefonnummer" required><br><br>
+
+                    <p>Varumärke:</p>
+                    
+                    <label for="netfurnish">NetFurnish produkt:</label>
+                    <input type="radio" id="netfurnish" name="produkt"><br>
+
+                    <label for="mio">Mio produkt:</label>
+                    <input type="radio" id="mio" name="produkt"><br>
+
+                    <label for="ikea">Ikea produkt:</label>
+                    <input type="radio" id="ikea" name="produkt"><br>
+
+                    <label for="övriga">Övriga samarbetande varumärken:</label>
+                    <input type="radio" id="övriga" name="produkt"><br><br><br>
+
+                    Anmälan angår:
+                    <select>
+                        <option value="retunering">Retunering</option>
+                        <option value="leverans">Leverans</option>
+                        <option value="skador">Skador</option>
+                        <option value="övrigt">Övrigt</option>
+                    </select><br><br><br>
+
+                    <label for="beskrivning">Beskriv ditt bekymmer och vad vi kan hjälpa dig med:</label><br><br>
+                    <textarea id="beskrivning" cols="60" rows="15"></textarea><br><br>
+
+                    <p>Vart vill du bli notifierad när din anmälan har besvarats?</p>
+
+                    <label for="mail">Email</label>                   
+                    <input type="checkbox" id="mail"><br>
+
+                    <label for="telefon">Telefon</label>
+                    <input type="checkbox" id="telefon"><br><br>                
+
+                    <input type="reset"><br>
+                    <input type="submit">
+
+                </form>
+            </div>
+        </aside>                  
     </div>
 </body>
 </html>

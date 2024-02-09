@@ -1,3 +1,10 @@
+<!-- 
+    Denna del av koden representerar en HTML-sida som visar information om en specifik produkt.
+    Den innehåller en header med en logotyp och en navigationsmeny.
+    Huvudinnehållet består av en bild, produktbeskrivning och produktinformation.
+    Det finns också en karta som visar var produkten finns i lager.
+    Sidan har också en sidofält med länkar till kundserviceinformation.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +15,7 @@
 </head>
 <body>
     <header>
+        <!-- Logotyp och rubrik för webbplatsen -->
         <img src="Assets/Images/image.png" alt="Vår bild" >
         <div class="header-content">
             <h1>NetFurnish</h1>
@@ -15,6 +23,7 @@
     </header>
 
     <nav>
+        <!-- Navigationsmeny med länkar till olika sidor -->
         <a href="index.html">Home</a>
         <a href="objekt.html">Objektsida</a>
         <a href="kontakt.html">Kontakt</a>
@@ -65,6 +74,7 @@
             </p>
             
             <p id="maps_id">
+                <!-- Karta som visar var produkten finns i lager -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2032.1299550665094!2d13.46491617711577!3d59.380858574639305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3b44b3b22cd%3A0x8281b61b27b291f0!2sMio%20Karlstad!5e0!3m2!1sen!2sse!4v1705798130535!5m2!1sen!2sse" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </p>
         </main>
